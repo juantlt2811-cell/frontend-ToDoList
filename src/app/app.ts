@@ -1,3 +1,4 @@
+import { environment } from '../environments/enviroment';
 import { Component, signal } from '@angular/core';
 import { Tarefa } from './tarefa';
 import { HttpClient } from '@angular/common/http';
@@ -14,7 +15,7 @@ export class App {
   apiURL: string;
 
   constructor(private http: HttpClient) {
-    this.apiURL = 'http://localhost:3000';
+    this.apiURL = environment.apiUrl;
     this.READ_tarefas();
   }
 
