@@ -15,7 +15,7 @@ export class App {
   apiURL: string;
 
   constructor(private http: HttpClient) {
-    this.apiURL = environment.apiUrl;
+    this.apiURL = 'https://apitarefasjuan252827.up.railway.app';
     this.READ_tarefas();
   }
 
